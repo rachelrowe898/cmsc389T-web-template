@@ -13,3 +13,6 @@ Rose quartz: #B2A3B5
 
 ## CSS
 .img -> where you can adjust image size
+
+## Custom Change
+Changed background accent color to lapis lazuli: #456990
