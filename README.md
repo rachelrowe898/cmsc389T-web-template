@@ -14,5 +14,8 @@ Rose quartz: #B2A3B5
 ## CSS
 .img -> where you can adjust image size
 
+## GitHub Pages Site Link
+https://rachelrowe898.github.io/cmsc389T-web-template/
+
 ## Custom Change
 Changed background accent color to lapis lazuli: #456990
