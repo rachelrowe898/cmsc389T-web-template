@@ -7,11 +7,16 @@
 # Use the node:10-alpine image as a base
 FROM node:10-alpine
 
-# Create a directory for the app
-WORKDIR /app
+# Add node user - maybe don't need to do this?
+RUN useradd -ms /bin/bash node
 
-# Set the owner of the directory to 'node'
-RUN chown -R node:node /app
+# Create a directory for the app
+RUN mkdir -p /home/node/app && chown -R node:node /home/node/app
+
+# Change working directory to the one we created
+WORKDIR /home/node/app 
+
+USER node
 
 # Copy package.json and package-lock.json to the container
 COPY package*.json ./
